@@ -1,8 +1,253 @@
+<!DoCTyPe html>
 <html>
 <head>
-	<title>La</title>
+	<meta charset="utf-8">
+	<title>My coursera test website</title>
+	<link rel="stylesheet" href="style.css">
+<style type="text/css">
+
+* {
+	box-sizing:border-box; /* CSS3: This is to specify whether "width" applies for the content of the box itself (border-box or content-box ) -Specifies the sizing model. You should use border box!! Also box sizing cannot be inherited!!! */
+	margin:0;
+	padding:0;
+	}/* this * selector chooses every element in the dom and applies this declaration! Very useful for resetting default values!*/
+
+body{
+	font-family:Georgia, serif;
+	font-size:120%;
+	margin:0;
+	padding:0;
+	background-image: url("http://www.jamieglowacki.com/wp-content/uploads/2015/01/LYw4POpF.jpeg");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background: url("http://www.jamieglowacki.com/wp-content/uploads/2015/01/LYw4POpF.jpeg") no-repeat center cyan; /*this overwrites every other background property*/
+}
+	p{
+	color: blue;
+	font-size: 15px;
+	width:300px;
+	}
+
+	h1{
+	color: pink;
+	font-size: 40px;
+	width:200px;
+	text-align: center;
+
+	}
+
+	h2{
+	color: navy;
+	font-size: 20px;
+	width:300px;
+	text-align: center;
+	}
+
+	div{color:maroon;
+	} /* !important says: I dont care about specificity -- use this!!; */
+
+	.xxx{color:green;text-align:center;}
+	#named{color:magenta;text-align:right;}
+	.highlight{background-color:lightblue;}
+
+	.highlight.xxx{color:silver;}
+
+	h1:hover{color: lightpink;}
+	h1::selection{color:navy; background-color:lightblue; }
+
+	.worst{font-family:"Comic Sans MS", cursive, sans-serif; 
+		   color:lightgreen;
+		   font-style:italic;
+		   font-weight:bold;
+		   font-size:16px;
+		   text-transform: uppercase;
+		   text-align: right;} /* font-size can be defined in pixels or in em (relative font sizing).  em--> how many times is the text analogous t o current font size. It does not overwrite - it is proportionate. Pixel is considered an absolute type of measurment. Default browser sixe around 16px. */
+
+	.best{font-family:Arial, Helvetica, sans-serif; 
+		   color:#ffffff;
+		   font-style:italic;
+		   font-weight:200;
+		   font-size:0.5em;
+		   text-transform: capitalize;
+		   text-align: justify;} 
+	/* draw selected text in a paragraph white on black */
+p::-moz-selection {
+  color: white;
+  background: black;
+}
+
+p::selection {
+  color: white;
+  background: black;
+}
+#box{
+	background-color:red;
+	margin:20px;
+	padding:10px;
+	border:3px solid white;
+	width:300px;
+	height:100px;
+	overflow:auto;
+
+}
+
+#content{
+	background-color:green;
+	color:yellow;
+}
+
+#box2{
+	background-color:red;
+	background-image: url("http://www.jamieglowacki.com/wp-content/uploads/2015/01/LYw4POpF.jpeg");
+	margin:20px;
+	padding:10px;
+	border:3px solid white;
+	width:300px;
+	height:100px;
+	overflow:auto;
+
+}
+
+#content2{
+	color:yellow;
+}
+
+
+
+#col1{background-color:gold;
+	color:#FFF;
+	margin-bottom: 10px;
+	padding:5px;
+	width: 50%;
+	border:3px solid black;
+	float: right;
+	margin-left: 5px
+
+}
+#col2{background-color:gold;
+color:#000;
+margin-top: 10px;
+padding:5px;
+width: 50%;
+border:3px solid black;
+margin-right: 5px
+
+}
+
+
+div#container{
+
+	background-color:#888888;
+	position: relative;
+}
+
+.position{
+	width:50px;
+	height:50px;
+	border:1px solid black;
+	margin-bottom: 15px;
+}
+
+#p1{
+	background-color: blue;
+	position: relative;
+	top:65px;
+	left:65px;
+}
+#p2{
+	background-color: yellow;
+}
+#p3{
+	background-color: green;
+	position: absolute;
+	top:0;
+	left:0;
+
+} /* an absolute element needs an absolute or relatve ansestor! if there is not one it uses html (which relatve by default (all the others are static*/
+#p4{
+	background-color: maroon;
+}
+
+
+@media (max-width: 767px){
+	p{color:blue;}
+}
+
+</style>
 </head>
 <body>
-<p>kkkkkkkk</p>
+	<h1>Crappy page for learning html</h1>
+	<h2 class="highlight">h2: this is a less important heading!</h2>
+	<h6 class="highlight">h6: this is the least important heading!</h6>
+<p>This&nbsp;stays&nbsp;together. <br>
+	These characters are special (HTML entities): &copy; &amp; &lt; &gt;</p><br>
+<!-- comment!!-->
+<img src="http://www.dizkover.com/upload/img/orig/77436-143233603686-adorable-awe-cute-puppy-teacup-favim.com-241480-large.jpg" width="600" height="500" alt="picture with puppy"><!-- img is an inline element-->
+<div>blah blah</div>
+<div id="named">Et vitae dolorem efficiantur mel, ne everti regione torquatos est. Vide feugait sed ea, eu vide affert oratio mei. Malorum saperet ei vel. Feugait qualisque accommodare duo ad. Scaevola deseruisse eos cu, cu omnium inimicus consectetuer has, ei aliquam vulputate ius.</div>
+<div class="xxx">Saepe aliquid te mel. Ea paulo ludus neglegentur mea, epicuri reprimique ea pro, sententiae signiferumque te eum. Nisl doming ut ius, ne has doming nostrum. Mea tota discere impedit in, unum brute duo in, mnesarchum honestatis ut sit. An his zril salutandi.</div>
+<div class="xxx highlight">Vix dolor affert discere an, te nec etiam inani munere, ex nam assum dignissim assentior. Eu vim enim quando, ut vero laudem sea. Admodum maiestatis pri ei, est labore doctus comprehensam an, audiam malorum senserit an pro. Vis cu idque dicam perfecto, graece mucius no qui. Vero alterum an nec.</div>
+
+<p>
+	Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br> non proident, sunt&nbsp;in&nbsp;culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p class="worst">
+	Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br> non proident, sunt&nbsp;in&nbsp;culpa qui officia deserunt mollit anim id est laborum.</p>
+<p class="best">
+	Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br> non proident, sunt&nbsp;in&nbsp;culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	<div id="box">
+		<div id="content">
+			Et vitae dolorem efficiantur mel, ne everti regione torquatos est. Vide feugait sed ea, eu vide affert oratio mei. Malorum saperet ei vel. Feugait qualisque accommodare duo ad. Scaevola deseruisse eos cu, cu omnium inimicus consectetuer has, ei aliquam vulputate ius.
+		</div>
+	</div>
+
+
+		<div id="box2">
+		<div id="content2">
+			Et vitae dolorem efficiantur mel, ne everti regione torquatos est. Vide feugait sed ea, eu vide affert oratio mei. Malorum saperet ei vel. Feugait qualisque accommodare duo ad. Scaevola deseruisse eos cu, cu omnium inimicus consectetuer has, ei aliquam vulputate ius. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+		</div>
+	</div>
+
+
+<div id="columns">
+		<div id="col1">
+			Et vitae dolorem efficiantur mel, ne everti regione torquatos est. Vide feugait sed ea, eu vide affert oratio mei. Malorum saperet ei vel. Feugait qualisque accommodare duo ad. Scaevola deseruisse eos cu, cu omnium inimicus consectetuer has, ei aliquam vulputate ius.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+		</div>
+
+		<div id="col2">
+			Et vitae dolorem efficiantur mel, ne everti regione torquatos est. Vide feugait sed ea, eu vide affert oratio mei. Malorum saperet ei vel. Feugait qualisque accommodare duo ad. Scaevola deseruisse eos cu, cu omnium inimicus consectetuer has, ei aliquam vulputate ius.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+		</div>
+		<section>Goes after columns</section>
+</div>
+
+<h2> Positioning</h2>
+
+<div id="container">
+	<p id="p1" class="position"> </p>
+	<p id="p2" class="position"> </p>
+	<p id="p3" class="position"> </p>
+	<p id="p4" class="position"> </p>
+</div>
 </body>
 </html>

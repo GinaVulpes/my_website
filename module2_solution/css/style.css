@@ -1,0 +1,99 @@
+* {
+	box-sizing:border-box; /* CSS3: This is to specify whether "width" applies for the content of the box itself (border-box or content-box ) -Specifies the sizing model. You should use border box!! Also box sizing cannot be inherited!!! */
+	margin:0;
+	padding:0;
+	}/* this * selector chooses every element in the dom and applies this declaration! Very useful for resetting default values!*/
+
+body{
+	font-family:Georgia, serif;
+	font-size:16px;
+	background-color:gray;
+	margin:5px;
+}
+
+	h1{
+	color: #f1f0ef;
+	font-size: 1.75em;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	}
+
+	section{
+
+			float:left;
+	}
+
+	.boxes{
+		border:1px solid black;
+		background-color: #f1f0ef;
+		padding:5px;
+		position:relative;
+		margin:5px;
+	}
+	/*.headers{		position:absolute;
+			right:-1px;
+			top:-1px;
+			width:100%;
+			height:25px;
+	}*/
+
+	p{
+	margin-top: 25px;
+	}
+
+	h2{
+		color:black;
+		background-color: white;
+		border:1px solid black;
+		width:100px;
+		text-align: center;
+		font-size: 1.25em;
+		position:absolute;
+		right:-1px;
+		top:-1px;
+	}
+
+	#chicken{
+		background-color: #36939e;
+	}
+
+	#beef{
+		background-color: #9e466b;
+	}
+
+	#sushi{
+		background-color: #9bc7ae;
+	}
+
+
+@media (min-width: 992px){
+	#first{
+	width:33%;
+	}
+
+	#second{
+		width:33%;
+	}
+
+	#third{
+		width:33%;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width:991px){
+
+	#first{
+		width:50%;
+	}
+
+	#second{
+		width:50%;
+	}
+
+	#third{
+		clear:left;
+		width:100%;
+	}
+}
