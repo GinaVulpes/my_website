@@ -1,0 +1,116 @@
+* {
+	box-sizing:border-box; /* CSS3: This is to specify whether "width" applies for the content of the box itself (border-box or content-box ) -Specifies the sizing model. You should use border box!! Also box sizing cannot be inherited!!! */
+	}/* this * selector chooses every element in the dom and applies this declaration! Very useful for resetting default values!*/
+
+	::-moz-selection { /* Code for Firefox */
+    color: purple;
+    background: silver;
+}
+	::selection {
+    color: purple;
+    background: silver;
+}
+
+body{
+	font-size:20px;
+	background-color: #a997b9;
+	font-family: 'Dancing Script', cursive;
+}
+
+
+	/** HEADER **/
+	#header_nav {
+	  background-color:#f1f0ef;
+		 /*#f7e6ff;*/
+	  border-radius: 0;
+	  border:0;
+	}
+	.navbar-brand{
+		margin:0px;
+		padding-top: 5px;
+	}
+
+	.navbar-brand h1{
+	text-align: left;
+	color: purple;
+	font-size: 1.8em;
+	text-shadow: 1px 1px 1px #222;
+	line-height: .75;
+	font-family: 'Lora', serif;
+	/*text-transform: uppercase;*/
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 0;
+	}
+
+	.navbar-brand a:hover, .navbar-brand a:focus {
+	  text-decoration: none;
+	}
+
+
+#nav-list {
+	background: #f1f0ef;
+}
+#nav-list a {
+	color: purple;
+  text-align: center;
+	font-size: 1em;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+	box-shadow: 0 0 10px white;
+	font-size: 1.05em;
+}
+#nav-list a span {
+  font-size: 1.2em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid purple;
+	border-radius: 50px;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.boxes{
+	background-color: #f1f0ef;
+	border-radius: 8px;
+	padding:10px;
+	margin-bottom:15px;
+}
+
+.boxes > h3{
+	margin:0 0 5px;
+}
+
+.boxes > p {
+	text-align: justify;
+	font-family: Georgia;
+	font-size:0.8em;
+
+}
+
+
+@media (min-width:1200px){
+
+}
+
+@media (min-width: 992px) and (max-width:1199px){
+
+}
+
+@media (min-width: 768px) and (max-width:991px){
+
+}
+
+@media (max-width:767px){
+
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+
+}
